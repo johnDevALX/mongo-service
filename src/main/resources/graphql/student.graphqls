@@ -1,0 +1,17 @@
+type Query {
+    students: [Student]
+    student(student: StudentDTO): Student
+    studentByID(studentId: String): Student
+}
+
+input StudentDTO {
+    studentId: String!
+    email: String!
+    password: String!
+}
+
+type Student {
+    studentId: String!
+    email: String!
+    password: String!
+}
