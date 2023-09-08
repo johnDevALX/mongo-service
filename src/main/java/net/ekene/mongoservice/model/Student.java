@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Document(collection = "graphqlService")
+@Document(collection = "mongoService")
 public class Student {
     @Id
     private String studentId;
